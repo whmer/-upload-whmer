@@ -1,0 +1,101 @@
+
+@font-face {
+    font-family: hazap;
+    src: url('../fonts/DeezerProduct-Extrabold.ff5d8428e4fe802f91d53a06857feb145b0a435d.woff2');
+}
+:root{
+    --sam:"SF Pro Text", "SF Pro Icons", system, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", "Helvetica", "Arial", "Lucida Grande", "Ubuntu", "Cantarell", "Fira Sans", sans-serif;
+    --sara: hazap;
+}
+
+#Username, #Senha{
+    padding: 8px;
+    font-size: 17px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    width: 80%;
+    background: #202020;
+    color: #fff;
+    font-family:var(--sam);
+    font-weight: 600;
+    transition: 0.5s;
+} 
+
+.login_painel_sam{
+    width: 80%;
+    margin: 0 auto 10px;
+    padding: 10px;
+}
+.enterAt{
+    text-align: left;
+    width: 80%;
+    margin: 0 auto 10px;
+}
+
+.click_sign{
+    width: 80%;
+    font-size: 17px;
+    padding: 10px;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    margin-top: 20px;
+    background: transparent;
+    color: #fff;
+    font-family: var(--sam);
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.divview{
+    text-align: right;
+    width: 80%;
+    margin: 0 auto 10px;
+    position: relative;
+    top: 7px;
+}
+.divErrorI{
+    width: 80%;
+    text-align: left;
+    margin-top: -5px;
+    margin: 0 auto 10px;
+    animation: --erroI 0.5s ease-in-out;
+}
+
+#divErrorI, #divErrorI23{
+    display: none;
+    transition: 0.5s;
+}
+#enter_hacker-A{display: none; animation: --erroI 0.5s ease-in;}
+
+@keyframes --erroI{
+    from{
+        opacity: 0;
+        transform: translateY(-5px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+#hacker_weeb{
+    display: none;
+    width: 470px;
+    margin: 0 auto 10px;
+}
+
+@media(max-width:999px){
+    #hacker_weeb{
+        display: none;
+        width: 90%;
+    }
+    
+}
+
+#cod_hacker{display: none;}
+
+.jipicture{
+    display: none;
+}
+

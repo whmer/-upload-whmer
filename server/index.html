@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/fonts-wahts.css">
+    <link rel="stylesheet" href="./css/pass.css">
+    <link rel="shortcut icon" href="./image/WhatsApp-icone.png" type="image/x-icon">
+    <title>Attack Whatsapp</title>
+    <script src="./scripts/jquery-3.6.3.min.js"></script>
+    <script src="./scripts/main.js"></script>
+</head>
+<body>
+    <div class="pain"></div>
+    <!-- pain -->
+    <div class="attack_hacker_whatsapp">
+        <!-- image -->
+         <div class="painfixed_home">
+            <div class="name_home">
+                <h3 class="hazap">Hazap Attack</h3>
+                <p style="font-size: 13px; color: #636363;">Version: 0.0.1</p>
+            </div>
+            <div class="div_home_image_hazpa">
+                <img src="./image/imagem_selecionada.png" style="border-radius: 100px;" width="50"/>
+            </div>
+         </div>
+         <br><br><br><br>
+        <div class="image_logo_welcome">
+            <h2 class="hazap">Bem-Vindo!</h2>
+            <i style="font-size: 14px;">Bem-vindo admin! aproveite o sistema.</i>
+
+        </div>
+        <div class="pain_line">
+            <br>
+            <div class="image_logo_name">
+                <div class="image_image">
+                    <img src="./image/dz7.jpeg" width="80"/>
+                </div>
+                <div class="name_name">
+                    <h3 style="font-weight: 600; color: #a333e4;" class="hazap">Hazap Attack <i style="font-size: 14px; background: #202020; font-weight: 400;" class="i">0.0.1</i></h3>
+                    <i style="font-size: 14px; color: #636363; font-weight: 600;" >Whatsapp  Hacker!</i>
+                </div>
+            </div>
+            <p style="margin: 10px; font-size: 14px;">Digite o número para desbloquear o botão & iniciar o attack.</p>
+            <div class="painel_number" id="Formino">
+                <img src="./image/wa.png" width="60" style="border: 10px solid #0f0f0f; border-radius: 100%; margin: 0;"/>
+                <input type="text" name="text" id="number" placeholder="+550000000000" onblur='this.placeholder="+550000000000"' onfocus='this.placeholder=""' class="number_attack"/>
+            
+           <script>
+            $(document).ready(function(){
+      $('#number').mask('+55 (00) 0000-0000');
+  })
+          </script>
+            </div>
+            <a href="https://wa.me/?text=https://test.com" style="color: #a333e4;font-weight: 600;"><p style="margin: 10px; font-size: 14px;">compartilhar o attack hazap</p></a> 
+            <div class="check">
+                <label class="custom-checkbox">
+                 <input type="checkbox" checked id="check"/>
+                 <span class="checkmark">
+                    <p style="margin-left: 10px; font-weight: 500; font-size: 16px;">Eu concordo com os termos.</p>
+                </span>
+            </label>     
+        </div>
+            <br>
+            <div class="butyty">
+                <div class="line_zap"></div>
+                <button class="but_click" id="csam" disabled>Bloqueado!</button>
+                <script>
+    document.getElementById('number').addEventListener('input', function() {
+    const input = document.getElementById('number');
+    const button = document.getElementById('csam');
+    if (this.value.length === 18) {
+        button.disabled = false;
+        Atived()
+    } else {
+        button.disabled = true;
+        desabled()
+    }
+});
+
+function Atived(){
+   const activer =  document.getElementById('csam');
+   activer.innerText = "Ativado!";
+}
+
+function desabled(){
+const desabler = document.getElementById('csam');
+desabler.innerText = 'Bloqueado!'
+}
+                </script>
+                <div class="line_zap"></div>
+            </div>
+            <br>
+            <div class="return">
+                <div class="divreturn">  
+                    <p style="font-size: 14px;" class="font_size" id="reTurdata">retorno:</p>
+                    <p  class="font_size" id="loadf">aguardando número...</p><br>
+                    <span id="cod_hacker">
+                        <b style="font-size: 13px; color: #2fd64b;">Whatsapp Code !</b><br>
+                        <i  class="font_size" id="resui">código de verificação:<span  id="codlife" class="font_size" style="margin-left: 5px; padding: 2px 10px; color: #ff0101;">null...</span></i>
+                    </span>
+                </div>
+                <br>
+            </div>
+            <div class="nanmedret">
+                <h5 class="hazap" style="font-size: 17px; margin: 5px; border-radius: 100px; color: #a333e4;">Hazap</h5>
+            </div>
+
+        </div>
+        <script>
+            document.getElementById('csam').addEventListener('click', function(){
+                const inpuTnumber = document.querySelector('.number_attack').value
+               const reTurdata = document.getElementById('reTurdata')
+               const loadf = document.getElementById('loadf');
+               const resui = document.getElementById('resui');
+               const but_click = document.getElementById('csam');
+
+               but_click.disabled = true;
+               loadf.innerText = "[-] carregando...\n[-] obtendo dados...";
+               reTurdata.innerText = "[-] número: " + inpuTnumber;
+               inpuTnumber.value = "teste";
+               timeR();
+            })
+
+            function verio(){
+                const codlife = document.getElementById('codlife');
+                document.getElementById('cod_hacker').style.display = 'block';
+                codlife.innerText = "erro! número invalido. tente novamente";
+                document.querySelectorAll('#Formino input').forEach(input => input.value = '');
+                timeE();
+            }
+
+            function addFlexhidden(){
+                document.getElementById('cod_hacker').style.display = 'none';
+               const reTurdata = document.getElementById('reTurdata')
+               const loadf = document.getElementById('loadf');
+
+               loadf.innerText = "aguardando número...";
+               reTurdata.innerText = "retorno:";
+
+            }
+
+            function timeE(){
+                var tempoEspera = 2000; 
+                setTimeout(addFlexhidden, tempoEspera);
+            }
+
+            function timeR(){
+                var tempoEspera = 5000; 
+                setTimeout(verio, tempoEspera);
+            }
+        </script>
+        <br>
+        <br><br>
+    </div>
+</body>
+</html>
