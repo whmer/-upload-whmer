@@ -51,7 +51,7 @@ body{
 .pain_line{
     width: 470px;
     margin: 0 auto 10px;
-    border: 2px solid #a333e4;
+    border: 2px solid #fff;
     border-radius: 1px;
     margin-top: 20px;
     text-align: left;
@@ -62,7 +62,7 @@ body{
     .pain_line{
         width: 90%;
         margin: 0 auto 10px;
-        border: 2px solid #a333e4;
+        border: 2px solid #fff;
         border-radius: 1px;
         margin-top: 20px;
         text-align: left;
@@ -79,11 +79,10 @@ body{
 }
 .line_zap{
     background: transparent;
-    height: 7px;
+    height: 2px;
+    background: #fff;
     width: 30%;
     margin-top: 30px;
-    border-top: 2px solid #a333e4;
-    border-bottom: 2px solid #a333e4;
 }
 
 .but_click{
@@ -168,7 +167,7 @@ margin-left: 10px;
 
 .div_home_image_hazpa{margin-top: 10px;}
 .name_home{margin-top: 10px; text-align: left;}
-.painfixed_home{background: #0c0c0c; position: fixed; left: 0; right: 0; top: 0; border-bottom: 1px solid #1d1c1c; overflow: hidden; display: flex; height: 8vh; justify-content: space-around;}
+.painfixed_home{background: #0c0c0c; position: fixed; left: 0; right: 0; top: 0; border-bottom: 1px solid #1d1c1c; overflow: hidden; display: flex; height: 13vh; justify-content: space-around;}
 
 .hazap{font-family: var(--hazap); font-size: 30px;} .i{font-family: var(--sam);}
 .nanmedret{background: #000; border-radius: 100px; text-align: center; max-width: 70px; position:relative; display: block; top: 20px; margin: 0 auto 10px;}

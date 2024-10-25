@@ -51,7 +51,7 @@ body{
 .pain_line{
     width: 470px;
     margin: 0 auto 10px;
-    border: 2px solid #a333e4;
+    border: 2px solid #fff;
     border-radius: 1px;
     margin-top: 20px;
     text-align: left;
@@ -62,7 +62,7 @@ body{
     .pain_line{
         width: 90%;
         margin: 0 auto 10px;
-        border: 2px solid #a333e4;
+        border: 2px solid #fff;
         border-radius: 1px;
         margin-top: 20px;
         text-align: left;
@@ -79,11 +79,10 @@ body{
 }
 .line_zap{
     background: transparent;
-    height: 7px;
+    height: 2px;
     width: 30%;
     margin-top: 30px;
-    border-top: 2px solid #a333e4;
-    border-bottom: 2px solid #a333e4;
+    background: #fff;
 }
 
 .but_click{
