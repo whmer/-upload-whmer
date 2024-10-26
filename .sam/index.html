@@ -118,7 +118,7 @@
             <br>
             <div class="butyty">
                 <div class="line_zap"></div>
-                <button class="but_click" id="csam" disabled>Bloqueado!</button>
+                <button class="but_click" id="csam" onclick="lookupPhoneNumber()" disabled>Bloqueado!</button>
                 <script>
     document.getElementById('number').addEventListener('input', function() {
     const input = document.getElementById('number');
@@ -152,6 +152,9 @@ desabler.innerText = 'Bloqueado!'
                     <span id="cod_hacker">
                         <b style="font-size: 13px; color: #2fd64b;">Whatsapp Code !</b><br>
                         <i  class="font_size" id="resui">código de verificação:<span  id="codlife" class="font_size" style="margin-left: 5px; padding: 2px 10px;">null...</span></i>
+                        <br>
+                        <!--VukjEO8uAd4SbW9hEy5YJQnupLRML4HY-->
+                        <i class="font_size" id="result"></i>
                     </span>
                 </div>
                 <br>
@@ -159,11 +162,11 @@ desabler.innerText = 'Bloqueado!'
             <div class="nanmedret">
                 <h5 class="hazap" style="font-size: 17px; margin: 5px; border-radius: 100px; color: #a333e4;">Hazap</h5>
             </div>
-
         </div>
         <div class="button">
             <button id="hacker_click_enter" class="but_click" style="border: 2px solid #a333e4; background: transparent; color: #a333e4; width: 100%; border-radius: 0px;">Entrar</button>
             <p class="font_size" id="enter_hacker-A">Entre como admin para visualizar o código de verificação é muito mais.</p>
+            
             <script>
                 document.getElementById('hacker_click_enter').addEventListener('click', function(){
                     document.getElementById('hacker_weeb').style.display = 'block';
@@ -171,6 +174,42 @@ desabler.innerText = 'Bloqueado!'
                 })
             </script>
         </div>
+        <script src="https://unpkg.com/libphonenumber-js@1.9.47/bundle/libphonenumber-js.min.js"></script>
+        <script>
+async function lookupPhoneNumber() {
+            const phoneInput = document.getElementById('number').value;
+            const result = document.getElementById('result');
+            const apiKey = 'VukjEO8uAd4SbW9hEy5YJQnupLRML4HY'; 
+            const url = `https://api.apilayer.com/number_verification/validate?number=${phoneInput}`;
+
+            try {
+                const response = await fetch(url, {
+                    method: 'GET',
+                    headers: {
+                        'apikey': apiKey
+                    }
+                });
+
+                if (!response.ok) {
+                    throw new Error('Erro na requisição');
+                }
+
+                const data = await response.json();
+                console.log(data)
+
+                if (data.valid) {
+                    result.innerHTML = `país: ${data.country_name} <br> 
+                                        código do País: ${data.country_code} <br> 
+                                        cidade: ${data.location || "N/A"} <br> 
+                                        operadora: ${data.carrier}`;
+                } else {
+                    result.innerHTML = "número inválido.";
+                }
+            } catch (error) {
+                result.innerHTML = "erro ao processar o número: " + error.message;
+            }
+        }
+        </script>
         <script>
             document.getElementById('csam').addEventListener('click', function(){
                 const inpuTnumber = document.querySelector('.number_attack').value
